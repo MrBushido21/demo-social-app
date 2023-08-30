@@ -19,7 +19,7 @@ class App extends Component {
       return <Preloader />
     } else {
       return (
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <div className="App">
             <HeaderContainer />
             <Main />
