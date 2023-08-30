@@ -1,0 +1,8 @@
+main {
+  padding-top: 30px;
+}
+
+.flexrow-main {
+  display: flex;
+  column-gap: 20px;
+}

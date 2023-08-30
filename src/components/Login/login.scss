@@ -1,0 +1,71 @@
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    max-width: 700px;
+    margin-top: 30px;
+}
+.input {
+    width: 400px;
+    padding: 10px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: 18px;
+}
+.check-box {
+    display: flex;
+    align-items: center;
+}
+.check {
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    font-size: 18px;
+    margin-right: 15px;
+
+    &.error {
+        box-shadow: 0px 1px 4px 4px red;
+    }
+}
+
+.span-remember.error {
+    display:  none;
+}
+
+label {
+    font-size: 18px;
+}
+
+.label-error {
+    color: red;
+}
+.input-error {
+    outline: 1px solid red;
+}
+
+.error {
+    color: red;
+    font-weight: 700;
+}
+
+.login-btn{
+    width: 120px;
+    height: 30px;
+    background-color: greenyellow;
+    &:hover {
+        background-color: chartreuse;
+    }
+    &.error-button {
+        background-color: transparent;
+        cursor: default;
+    }
+}
+
+textarea {
+    border: 1px solid black;
+    width: 300px;
+    height: 100px;
+    resize: none;
+}

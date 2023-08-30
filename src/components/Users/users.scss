@@ -1,0 +1,127 @@
+.Users {
+
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: rgb(34, 224, 34);
+        margin: 0 auto;
+        margin-top: 40px;
+
+        &:hover {
+            background-color: green;
+            transition: 0.3s ease 0s;
+        }
+    }
+    .users__items {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 30px;
+    }
+    .users__item {
+        display: flex;
+        column-gap: 15px;
+        align-items: center;
+    }
+    .item-profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .user-icon-profile {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: aquamarine;
+        }
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 20px;
+            font-size: 18px;
+            font-weight: 700;
+            background-color: rgb(34, 224, 34);
+
+            &:hover {
+                background-color: green;
+                transition: 0.3s ease 0s;
+            }
+        }
+    }
+    .item-user-info {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 15px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        height: 80px;
+        padding: 10px;
+        width: 60%;
+
+        .item-name-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .user-name{
+                font-size: 18px;
+                font-weight: 600;
+            }
+            .user-status {
+                font-size: 16px;
+            }
+        }
+        .item-location-box {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            div {
+                font-size: 18px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .pagination {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+
+        button {
+            margin: 0;
+            width: 110px;
+            height: 30px;
+            border-radius: 4px;
+            background-color: transparent;
+            border: 1px solid teal;
+
+            &:hover {
+                background-color: teal;
+                transition: .3s ease 0s;
+            }
+        }
+        span {
+            cursor: pointer;
+
+            &.selectedPage {
+                font-weight: 700;
+            }
+        }
+      }
+}

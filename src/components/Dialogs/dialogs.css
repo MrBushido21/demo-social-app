@@ -1,0 +1,137 @@
+.dialogs h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.dialogs .hr {
+  width: 2px;
+  background-color: purple;
+}
+.dialogs__flexrow {
+  display: flex;
+  column-gap: 20px;
+}
+.dialogs__names {
+  flex: 0 1 25%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+}
+.dialogs__name {
+  font-size: 17px;
+  position: relative;
+  padding-left: 20px;
+}
+.dialogs__name.dialog-acive, .dialogs__name.active {
+  font-weight: 700;
+  font-size: 20px;
+}
+.dialogs__name.dialog-acive::before, .dialogs__name.active::before {
+  background-color: green;
+}
+.dialogs__name::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.dialogs__name a {
+  color: #000;
+}
+.dialogs__name a:hover {
+  font-weight: 700;
+  transition: 0.2s ease 0s;
+}
+.dialogs__messages {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+}
+.dialogs__message-box {
+  display: flex;
+  align-items: center;
+}
+.dialogs__message-box.me {
+  margin-left: auto;
+}
+.dialogs__persone {
+  text-align: center;
+}
+.dialogs__persone-ava {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(185, 162, 162);
+  margin-bottom: 5px;
+}
+.dialogs__persone-name {
+  font-size: 16px;
+}
+.dialogs__message {
+  width: 250px;
+  word-break: break-all;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.dialogs__message::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid transparent;
+  border-right: 12px solid black;
+  border-bottom: 5px solid transparent;
+}
+.dialogs__add-text {
+  width: 100%;
+  margin-top: 120px;
+  margin-left: auto;
+}
+.dialogs__add-text form {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.dialogs__add-text textarea {
+  flex: 0 1 69%;
+  height: 100px;
+  background-color: rgb(226, 218, 218);
+  font-size: 20px;
+  color: #000;
+  padding: 15px;
+  resize: none;
+}
+.dialogs__add-text button {
+  flex: 0 1 10%;
+  height: 30px;
+  margin-left: 15px;
+  color: #000;
+  font-size: 20;
+  font-weight: 700;
+  background-color: rgb(37, 224, 37);
+}
+.dialogs__add-text button:hover {
+  cursor: pointer;
+  background-color: green;
+  transition: 0.3s ease 0s;
+}

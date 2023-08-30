@@ -1,0 +1,64 @@
+header {
+    width: 100%; 
+    background-color: rgb(59, 207, 59);
+    padding: 15px 0;
+}
+
+
+.box-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(7, 123, 231);
+}
+
+.header-flexrow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-block {
+  position: relative;
+  font-size: 18px;
+  cursor: pointer;
+  &:hover {
+    color: aqua;
+  }
+
+  .logout-box {
+    background-color: aquamarine;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: -70px;
+    left: -20px;
+    display: none;
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 120px;
+      height: 30px;
+      background-color: rgb(210, 208, 221);
+      font-weight: 700;
+      &:hover {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &.active .logout-box  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    color: black;
+    &:hover {
+      color: aqua;
+      transition: .3s ease 0s;
+    }
+  }
+}
