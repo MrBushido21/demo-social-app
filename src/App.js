@@ -18,12 +18,12 @@ class App extends Component {
     if(!this.props.initialized) {
       return <Preloader />
     } else {
-      return <BrowserRouter basename="/">
+      return <HashRouter>
       <div className="App">
         <HeaderContainer />
         <Main />
       </div>
-    </BrowserRouter >
+    </HashRouter >
     }
     
   }
