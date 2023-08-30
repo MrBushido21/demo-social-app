@@ -3,7 +3,7 @@ import HeaderContainer from './components/Header/HeaderContainer';
 import Main from './components/Main/Main';
 import './css/style.css'
 import { initializeApp } from "./redux/appReducer";
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, HashRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import Preloader from './components/common/Preloader';
@@ -19,12 +19,12 @@ class App extends Component {
       return <Preloader />
     } else {
       return (
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
           <div className="App">
             <HeaderContainer />
             <Main />
           </div>
-        </BrowserRouter>
+        </HashRouter >
       );
     }
     
