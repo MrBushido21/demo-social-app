@@ -18,14 +18,12 @@ class App extends Component {
     if(!this.props.initialized) {
       return <Preloader />
     } else {
-      return (
-        <HashRouter basename={process.env.PUBLIC_URL}>
-          <div className="App">
-            <HeaderContainer />
-            <Main />
-          </div>
-        </HashRouter >
-      );
+      return <BrowserRouter basename="/">
+      <div className="App">
+        <HeaderContainer />
+        <Main />
+      </div>
+    </BrowserRouter >
     }
     
   }
