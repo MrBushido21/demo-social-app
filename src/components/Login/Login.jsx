@@ -34,7 +34,7 @@ return <Form className='form'>
       validate={validateEmail}
       name="email"
       placeholder="Email"
-      value={props.values.email}
+      value={props.values.email || "mrbushido21@ukr.net"}
       onChange={props.handleChange}
     />
     {props.errors.email && props.touched.email && (
