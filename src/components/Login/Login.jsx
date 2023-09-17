@@ -26,7 +26,7 @@ function LoginForm(props) {
 
 return <Form className='form'>
     <label className={`label ${props.errors.email && props.touched.email ? "label-error" : ""}`}>
-      Email:
+      Email: "mrbushido21@ukr.net"
     </label>
     <Field
       className={`input ${props.errors.email && props.touched.email ? "input-error" : ""}`}
@@ -34,14 +34,14 @@ return <Form className='form'>
       validate={validateEmail}
       name="email"
       placeholder="Email"
-      value={props.values.email || "mrbushido21@ukr.net"}
+      value={props.values.email}
       onChange={props.handleChange}
     />
     {props.errors.email && props.touched.email && (
       <div className='error'>{props.errors.email}</div>
     )}
     <label className={`label ${props.errors.password && props.touched.password ? "label-error" : ""}`}>
-      Password:
+      Password: "qwert78yui"
     </label>
     <Field
       className={`input ${props.errors.password && props.touched.password ? "input-error" : ""}`}
